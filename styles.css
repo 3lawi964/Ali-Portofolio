@@ -1,0 +1,78 @@
+body {
+  background-color: #deedf6;
+}
+.hero-section {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.img--1 {
+  height: 150vh;
+  position: absolute;
+  top: -20rem;
+  left: -10rem;
+  z-index: -1;
+  filter: blur(150px);
+  /* animation: blur 3s ease-in-out 0s infinite alternate; */
+}
+.img--2 {
+  height: 150vh;
+  position: absolute;
+  bottom: -15rem;
+  right: -10rem;
+  z-index: -1;
+  transform: rotate(180deg);
+  filter: blur(170px);
+  /* animation: blur 3s ease-in-out 0s infinite alternate; */
+}
+@keyframes blur {
+  from {
+    transform: rotate(0deg);
+    transform: scale(0);
+  }
+  from {
+    transform: rotate(360deg);
+    transform: scale(1.5);
+  }
+}
+
+.quote {
+  padding: 0 2.4rem;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+  gap: 4.8rem;
+}
+.head {
+  height: 25rem;
+  max-width: 100%;
+}
+.planetHead-container {
+  animation: animate 8s ease-in-out infinite;
+  position: relative;
+}
+@keyframes animate {
+  0%,
+  100% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
+
+/* .planet-head {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 500px;
+  background-color: red;
+} */
+
+/* .quote a {
+  transition: background-color 3s;
+}
+.quote a:hover {
+  background-color: red;
+} */
