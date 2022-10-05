@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 body {
   background-color: #deedf6;
 }
@@ -183,4 +186,24 @@ span img {
     transform: translate(0, 0) rotate(20deg);
     z-index: 1;
   }
+}
+
+.blur-img-1 {
+  position: absolute;
+  top: 0;
+  right: -150px;
+  z-index: -9;
+  height: 20rem;
+  width: 20rem;
+  filter: blur(100px);
+}
+
+.blur-img-2 {
+  position: absolute;
+  bottom: 0;
+  left: -20px;
+  z-index: -9;
+  height: 15rem;
+  width: 15rem;
+  filter: blur(100px);
 }

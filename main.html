@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     <title>Portfolio</title>
   </head>
   <body class="bg-white">
@@ -13,26 +14,25 @@
       <nav class="flex items-center justify-between px-20 pt-4 pb-4 mb-8">
         <div><ion-icon name="planet-outline" class="blue-stroke h-8 w-8 "></ion-icon></div>
         <ul class="flex  gap-8 font-semibold">
-          <li><a href="#">About</a></li>
-          <li><a href="#">Skills</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#about" class="hover:text-sky-500 duration-300">About</a></li>
+          <li><a href="#project" class="hover:text-sky-500 duration-300">Projects</a></li>
+          <li><a href="#contact" class="hover:text-sky-500 duration-300">Contact</a></li>
         </ul>
       </nav>
       <div>
         <img src="./imgs/blured.png" alt="" class="img--1" />
         <img src="./imgs/blured.png" alt="" class="img--2" />
       </div>
-      <div class="quote sm:flex-row">
+      <div class="quote">
         <div>
           <h1 class="text-4xl pr-24 mb-16 font-bold text-white">
             Create your world inside your mind, color it and make it worth
             living in.
           </h1>
           <a
-            href="#"
+            href="#about"
             class="blue-bg rounded-full text-white py-4 px-8 hover:ease-out duration-100 font-semibold "
-            >Learn More</a
+            >Explore</a
           >
         </div>
         <div class="planetHead-container">
@@ -47,32 +47,110 @@
         
       </div>
     </div>
-    <div class="about--section w-3/4 mx-auto mb-20 pl-24">
+    <div class=" w-3/4 mx-auto pl-24 flex flex-col  mb-32">
         <!-- todo About section -->
-        <div class="flex flex-col gap-8 " >
-            <h3 class="text-4xl font-semibold  " id="contact">About me<span class="blue-txt">.</span></h3>
+        <div class="flex flex-col gap-8" >
+            <h3 class="text-4xl font-semibold  " id="about">About me<span class="blue-txt">.</span></h3>
             <p class="text-base text-gray-500 mb-6 ">Hello, my name is <span class="blue-txt font-bold">Ali</span>. a front-end developer and graphic designer
                 <br> programming is my passion, and i love sharing my knowledge with others.
             </p>
             <div>
-                <a href="#" class="shadow-blue-200 shadow-xl px-8 py-1 bg-sky-500 rounded-lg font-bold text-white hover:bg-sky-400 duration-300">CV</a>
-                <a href="#" class="px-8 py-1 text-gray-300 font-semibold duration-300 hover:text-gray-500" >Contact me</a>
+                <a href="./pdf/cv.pdf" class="shadow-blue-200 shadow-xl px-8 py-1 bg-sky-500 rounded-lg font-bold text-white hover:bg-sky-400 duration-300">CV</a>
+                <a href="#contact" class="px-8 py-1 text-gray-300 font-semibold duration-300 hover:text-gray-500" >Contact me</a>
             </div>
             <div class="flex gap-4">
-                <a href="#"><ion-icon name="logo-github" class="bg-indigo-300 text-white p-1 rounded-full hover:-translate-y-1 duration-300"></ion-icon></a>
-                <a href="#"><ion-icon name="logo-linkedin"  class="bg-indigo-300 text-white p-1 rounded-full hover:-translate-y-1 duration-300"></ion-icon></a>
-                <a href="#"><ion-icon name="logo-twitter" class="bg-indigo-300 text-white p-1 rounded-full hover:-translate-y-1 duration-300"></ion-icon></a>
+                <a href="https://github.com/3lawi964" target="_blank"><ion-icon name="logo-github" class="bg-indigo-300 text-white p-1 rounded-full hover:-translate-y-1 duration-300"></ion-icon></a>
+                <a href="https://www.linkedin.com/in/ali-majed-2012a8188?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bju3bPzc9R5Cw5KpIsVPqtw%3D%3D" target="_blank"><ion-icon name="logo-linkedin"  class="bg-indigo-300 text-white p-1 rounded-full hover:-translate-y-1 duration-300"></ion-icon></a>
+                <a href="https://twitter.com/3lawi964" target="_blank"><ion-icon name="logo-twitter" class="bg-indigo-300 text-white p-1 rounded-full hover:-translate-y-1 duration-300"></ion-icon></a>
                 
             </div>
         </div>
         <!-- todo about section done! -->
-        <!-- todo skills section -->
-
-        <div>
-
-        </div>
         
+    </div>
+    <!-- todo project section -->
+    <div class=" w-3/4 mx-auto mb-32 relative">
+        <img src="imgs/blured.png" alt="" class="blur-img-1">
+        <img src="imgs/blured.png" alt="" class="blur-img-2">
 
+        <h3 class="text-4xl font-semibold mb-20 text-center " id="project">Projects<span class="blue-txt">.</span></h3>
+        <div class="flex gap-20">
+
+            <figure class="h-96 w-72 mx-auto bg-white z-10 shadow-md shadow-blue-200 rounded-md overflow-hidden  hover:shadow-xl hover:shadow-blue-100 duration-300 flex-col">
+                <div class="overflow-hidden ">
+                    <img src="./imgs/proimg/modern-house.png" alt="" class=" w-100% scale-105 duration-300 hover:scale-110 pt-6 ">
+                </div>
+                
+                <div class="p-8 flex-col gap-20">
+                    <div class="mb-8">
+                        <h3 class="text-gray-600 font-bold mb-4">Modern House</h3>
+                        <p class="text-gray-400 mb-14">That was my first website ever 😆 </p>
+                    </div>
+                    <div class="">
+                        <a href="https://modern-house0.netlify.app/" target="_blank" class="px-4 py-1 font-bold bg-sky-400 text-white rounded-full text-xs duration-300 hover:bg-sky-500">View</a>
+                        <a href="https://github.com/3lawi964/modern-house-practice" target="_blank" class="text-xs px-8 py-1 text-indigo-300 font-semibold duration-300 hover:text-gray-500">Code</a>
+                    </div>
+                </div>
+               
+            </figure>
+            <figure class="h-96 w-72 mx-auto bg-white z-10 shadow-md shadow-blue-200 rounded-md overflow-hidden  hover:shadow-xl hover:shadow-blue-100 duration-300 flex-col">
+                <div class="overflow-hidden ">
+                    <img src="./imgs/proimg/omn.png" alt="" class="proj-img w-100% scale-105 duration-300 hover:scale-110 ">
+                </div>
+                
+                <div class="p-8">
+                    <div class="mb-8">
+                        <h3 class="text-gray-600 font-bold mb-4">Omnifood</h3>
+                        <p class="text-gray-400">I create this project to practice <span class="text-red-500 font-bold">CSS</span>, but it's not completed yet!</p>
+                    </div>
+                    <div class="">
+                        <a href="https://omni-3lawi.netlify.app/" target="_blank" class="px-4 py-1 font-bold bg-sky-400 text-white rounded-full text-xs duration-300 hover:bg-sky-500">View</a>
+                        <a href="https://github.com/3lawi964/om-practice" target="_blank" class="text-xs px-8 py-1 text-indigo-300 font-semibold duration-300 hover:text-gray-500">Code</a>
+                    </div>
+                </div>
+               
+            </figure>
+            <figure class="h-96 w-72 mx-auto bg-white z-10 shadow-md shadow-blue-200 rounded-md overflow-hidden  hover:shadow-xl hover:shadow-blue-100 duration-300 flex-col">
+                <div class="overflow-hidden ">
+                    <img src="./imgs/proimg/codingfood.png" alt="" class="mb-6 proj-img w-100% scale-105 duration-300 hover:scale-110 ">
+                </div>
+                
+                <div class="p-8">
+                    <div class="mb-8">
+                        <h3 class="text-gray-600 font-bold mb-4">Coding Food</h3>
+                        <p class="text-gray-400 mb-8">The best recipes in the whole world. Shout out to : Yusif, Hani and Danah.</p>
+                    </div>
+                    <div class="">
+                        <a href="https://codingfood-tmhd.vercel.app/" target="_blank" class="px-4 py-1 font-bold bg-sky-400 text-white rounded-full text-xs duration-300 hover:bg-sky-500">View</a>
+                        <a href="https://github.com/3lawi964/restaurant" target="_blank" class="text-xs px-8 py-1 text-indigo-300 font-semibold duration-300 hover:text-gray-500">Code</a>
+                    </div>
+                </div>
+            </figure>
+        </div>
+    </div>
+    <!-- todo project section ends here ! -->
+
+    <!-- todo contact section -->
+    <div class="contact bg-sky-600 pt-20 flex justify-evenly">
+        <div class="">
+            <h3 class="text-4xl font-semibold text-white mb-10" id="contact">Let's have a little conversation<span class="blue-txt">.</span></h3>
+            <div>
+                <form action="submit">
+                    <div class="mb-8 ">
+                        <input type="text" class="mr-8 bg-sky-600 border-b-2 border-white focus:outline-none py-4 placeholder:text-white text-white placeholder:opacity-50" placeholder="Dean Martin">
+                        <input type="email" placeholder="example@gmail.com" class="bg-sky-600 border-b-2 border-white focus:outline-none py-4 placeholder:text-white text-white placeholder:opacity-50">
+                    </div>
+                    <div class="mb-4 flex flex-col items-start gap-10">
+                        <textarea name="" id="" placeholder="Say Hi👋" cols="52" rows="2" class="resize-none placeholder:text-white text-white border-b-2 bg-sky-600 focus:outline-none placeholder:opacity-50 "></textarea>
+                        <button class="self-center ml-64"><ion-icon name="paper-plane" class="bg-white p-2 rounded-full"></ion-icon></button>
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+        <div>
+            <img src="./imgs/hand.png" alt="">
+        </div>
     </div>
     <script
       type="module"
